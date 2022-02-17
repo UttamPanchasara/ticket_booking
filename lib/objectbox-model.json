@@ -1,0 +1,95 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4437565790734368913",
+      "lastPropertyId": "4:4936011655617489691",
+      "name": "FamilyData",
+      "properties": [
+        {
+          "id": "1:5815649788661955406",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5440581315562614301",
+          "name": "familyName",
+          "type": 9
+        },
+        {
+          "id": "3:9207629482686075901",
+          "name": "totalMembers",
+          "type": 6
+        },
+        {
+          "id": "4:4936011655617489691",
+          "name": "ticketBooked",
+          "type": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:968858444938183975",
+      "lastPropertyId": "7:709396561158528375",
+      "name": "Members",
+      "properties": [
+        {
+          "id": "1:1530962228118424606",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6465503722525163722",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:8364594980291405225",
+          "name": "phoneNumber",
+          "type": 9
+        },
+        {
+          "id": "6:83341624300779921",
+          "name": "familyDataId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "8:2763212896600404424",
+          "relationTarget": "FamilyData"
+        },
+        {
+          "id": "7:709396561158528375",
+          "name": "seatNo",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:968858444938183975",
+  "lastIndexId": "8:2763212896600404424",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [
+    5889383266133159454,
+    5680814266460547624,
+    5352156100117420211,
+    267810797387452986,
+    742947568812442103,
+    1757656908324297555,
+    6518029935179247692
+  ],
+  "retiredPropertyUids": [
+    159167823367342186,
+    2380435754458152355
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}
